@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+/* Colors */
+
+/* #Primary# */
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* #Neutral# */
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+
+/* Font */
+--Outfit:'Outfit', sans-serif;
+/* font padrão 18px */
+
+}
+
+body{
+    align-items: center;
+    background-color: var(--Very-dark-blue-main-BG);
+    color: var(--White);
+    display: flex;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: var(--Outfit);
+    justify-content: center;
+    height: 100vh;
+}
+
+.component{
+    background-color: var(--Very-dark-blue-card-BG);
+    margin: 30px;
+    border-radius: 10px;
+    
+}
+
+/* content */
+.content{
+    padding: 25px;
+    
+}
+
+.content__image{
+    width: 35vh;
+    border-radius: 10px; 
+    
+}
+
+.content__image:hover{
+    opacity: 0.3;
+}
+
+.content__image-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content__image-view:hover{
+    background: url(../images/icon-view.svg) center no-repeat;  
+    background-color: hsl(178, 100%, 50%,0.9);
+    border-radius: 10px;
+    
+}
+
+.content__block{
+    margin: 20px 0px;
+
+}
+
+.block__title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.block__title:hover{
+    color: var(--Cyan);
+}
+
+.block__text{
+    color: var(--Soft-blue);
+    line-height: 25px;
+
+}
+
+
+
+/* info */
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__notif{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.notif__image{
+    margin-right: 5px;
+}
+
+.notif__text-ethereum{
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.notif__text-clock{
+    color: var(--Soft-blue);
+}
+
+/* line */
+.line{
+    list-style: none;
+    color: var(--Very-dark-blue-line);
+}
+
+
+/* perfil */
+.perfil{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.perfil__image{
+    border: 1px solid var(--White);
+    border-radius: 20px;
+    margin-right: 15px;
+    width: 4vh;
+}
+
+.perfil__text{
+    color: var(--Soft-blue);
+}
+
+.perfil__text span{
+    color: var(--White);
+}
+
+.perfil__text span:hover{
+    color: var(--Cyan);
+}
+
+@media screen and (min-width:400px){
+    .component{
+        width: 41vh;
+    }
+}
